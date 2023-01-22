@@ -7,11 +7,18 @@ then
     echo "Condition is true"
 fi
 
-word=a
+word=ab
 
 if [ $word == 'a' ]
 then
-    echo "True"
+    echo "True - a"
+elif [ $word == 'ab' ]
+then
+    echo "True - ab"
 else
     echo "False"
 fi
+
+
+# [-lt] = less than [-ne] = not equal -gt = greater than 
+# [-le] less than or equal to [-ge] = greater than or equal to
